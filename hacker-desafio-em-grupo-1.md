@@ -2,6 +2,7 @@
 Dev FullStack
 
  Integrantes:
+ 
  - Bruna Duarte
  - Fabiano Soares
  - Alexandre Chaves
