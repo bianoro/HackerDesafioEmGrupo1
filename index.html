@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>hacker-desafio-em-grupo-1</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>HACKER - DESAFIO EM GRUPO 1</h1>
+        <section>
+            <article>
+                <h4 dir="ltr"><span style="color: rgb(0, 0, 0); background-color: rgb(147, 101, 184);">Hey
+                        Hackers!</span></h4>
+                <p dir="ltr">Estamos aqui para apresentar a vocês o primeiro desafio deste programa. E nosso objetivo é
+                    que vocês
+                    pratiquem (agora em equipes) todas as competências que adquiriram ao longo deste mês.</p>
+                <p dir="ltr">Serão ao todo, 2 entregas, que poderão ser feitas de forma sequencial. Ao final de cada
+                    entrega, sua
+                    equipe será avaliada a partir de um checklist previamente definido (que você encontra logo a
+                    seguir).</p>
+                <p dir="ltr"><strong>Contexto</strong>:&nbsp;Continuamos no nosso contexto de sermos parte de uma equipe
+                    de
+                    desenvolvimento de websites e fomos contratados para a criação de um site de catálogo de produtos.
+                    Agora
+                    precisamos definir algumas regras de negócio para nosso Comércio Eletrônico e para isso precisamos
+                    definir
+                    algumas funcionalidades que podemos trabalhar usando Lógica de Programação e Javascript.</p>
+                <p dir="ltr">Neste caso, vamos tratar de uma loja (fictícia) de artigos eletrônicos e de informática,
+                    tudo bem?</p>
+                <p dir="ltr">E por conta disso, temos uma lista de produtos já declarada num arquivo Javascript que
+                    vocês terão
+                    acesso. Cada produto tem a seguinte estrutura:</p>
+                <p>&nbsp; {</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "codProduto": 25754,</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "descricao": "ADAPTADOR BLUETOOH USB RECEPTOR DE AUDIO P2",</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "preco": 5.0,</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "qtdEstoque": 10,</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "disponivel": "sim",</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "emDestaque": "sim",</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; "departamento": {</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "idDepto": 1,</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "nomeDepto": "Adaptadores"</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+                <p>&nbsp; &nbsp; }</p>
+                <p dir="ltr">&nbsp;</p>
+                <p dir="ltr">Pois bem, com esta estrutura, agora organizando os produtos em uma grande lista, podemos (e
+                    é este o
+                    objetivo) criar várias funcionalidades para as regras de negócio do nosso ECommerce. Então vamos lá.
+                </p>
+                <p dir="ltr"><strong>Itens a serem resolvidos</strong></p>
+                <ol>
+                    <li dir="ltr">
+                        <p dir="ltr">Quantidade total de itens em estoque (somatória das quantidades de todos os
+                            produtos)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Quantidade total de itens em destaque (somatória das quantidades dos itens marcados
+                            como
+                            "emDestaque : sim")</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Quantidade total de itens disponíveis (similar ao anterior)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Quantidade de itens disponíveis e em destaque</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Valor total do inventário da empresa (somatória dos valores individuais
+                            multiplicado pela
+                            quantidade em estoque - considere apenas os produtos “EM DESTAQUE)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Produto mais caro da loja (bem como seu departamento - considere apenas o preço
+                            dele)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Produto mais barato da loja (bem como seu departamento - considere apenas o preço
+                            dele)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Produto de estoque mais valioso (considere o preço multiplicado pela quantidade e
+                            também apenas
+                            EM ESTOQUE)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Produto em estoque menos valioso (considere o preço multiplicado pela quantidade e
+                            também
+                            apenas EM ESTOQUE)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Valor do ticket médio dos produtos da empresa (basicamente o valor total do
+                            inventário dividido
+                            pelo número de itens - considere TODOS os produtos, porém considere apenas 1 exemplar por
+                            produto)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Somatória de itens por departamento (você deverá retornar um objeto contendo o nome
+                            do
+                            departamento e o total de itens nele - Novamente considere os produtos “EM ESTOQUE” - e é
+                            apenas a
+                            somatória da quantidade de itens)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Valor total do inventário por departamento (similar ao item anterior - considere
+                            TODOS os
+                            produtos)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Ticket médio por departamento (similar ao item anterior, porém retornando uma lista
+                            de objetos
+                            que contenha o nome do departamento e o seu ticket médio). Este é um exercícios difícil,
+                            porém é&nbsp;
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Departamento mais valioso (qual o departamento que tem a maior somatória dos
+                            valores dos itens
+                            - Considere todos os departamentos)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Departamento menos valioso (similar ao anterior)</p>
+                    </li>
+                </ol>
+                <p dir="ltr">&nbsp;</p>
+                <p dir="ltr"><strong>ENTREGAS MÍNIMAS DO DESAFIO:</strong></p>
+                <ol>
+                    <li dir="ltr">
+                        <p dir="ltr"><strong>Semana 1:<br></strong>1.1 Exercícios de 1 a 10</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">Semana 2:<br>2.1 Exercícios de 11 a 15</p>
+                    </li>
+                </ol>
+                <p dir="ltr"><strong>CHECKLIST SEMANAL PARA O DESAFIO</strong></p>
+                <ol>
+                    <li dir="ltr">
+                        <p dir="ltr">Todos os códigos deverão estar em um repositório GIT de acesso público (sua equipe
+                            pode fazer
+                            cada exercício em arquivos separados ou no mesmo arquivo)</p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">O arquivo contendo a lista de produtos estará disponível para todos com nome lista
+                            "Produtos
+                            para que isso facilite seus testes."</p>
+                    </li>
+                </ol>
+                <p dir="ltr"><br></p>
+                <p dir="ltr"><strong>FORMATO DE AVALIAÇÃO PARA O DESAFIO</strong></p>
+                <p dir="ltr"><strong>SEMANA 01<br></strong><strong>Entrega:&nbsp;</strong></p>
+                <p dir="ltr">Link do GITHUB de 1 membro da equipe que contenha 1 ou mais arquivos Javascript com a
+                    resolução dos
+                    exercícios (pode ser 1 único arquivo com todas as resoluções - em funções - ou vários arquivos um
+                    para cada
+                    exercício)</p>
+                <p dir="ltr">Arquivo README.md no repositório contendo o nome dos integrantes da equipe.</p>
+                <p dir="ltr">&nbsp;</p>
+                <p dir="ltr"><strong>SEMANA 02<br></strong><strong>Entrega:</strong>&nbsp;</p>
+                <p dir="ltr">Link do GITHUB de 1 membro da equipe que contenha as resoluções dos exercícios</p>
+                <p dir="ltr">Arquivo README.md no repositório contendo o nome dos integrantes da equipe</p>
+                <p data-empty="true"><br></p>
+                <p data-empty="true"><span style="font-size: 12px;"><strong><em><span
+                                    style="background-color: rgb(235, 107, 86);">ATENÇÃO:&nbsp;</span>Somente 1 pessoa
+                                por grupo
+                                entrega o desafio aqui no sistema</em></strong></span><br><span
+                        style="font-size: 12px;"><strong><em>Entrega da semana 1 - 06/08 - 11h59 (antes do meio
+                                dia)</em></strong></span><br><span style="font-size: 12px;"><strong><em>Entrega da
+                                semana 2 - 13/08
+                                - 11h59 <span style="font-size: 12px;"><strong><em>(antes do meio
+                                            dia)</em></strong></span></em></strong></span></p>
+            </article>
+        </section>
+
+    </main>
+
+    <script src="solucao.js"></script>
+
+</body>
+
+</html>
